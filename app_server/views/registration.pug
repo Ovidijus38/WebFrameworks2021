@@ -1,0 +1,29 @@
+extends layout
+block content
+  .container
+    .row
+      .col-md-6.mx-auto.text-center
+        .header-title
+          h1.wv-heading--title
+            | Register &mdash; it&rsquo;s free!
+    .row
+      .col-md-4.mx-auto
+        .myform.form
+          form(action='' method='post' name='login')
+            .form-group
+              input#name.form-control.my-input(type='text' name='name' placeholder='Name')
+            .form-group
+              input#email.form-control.my-input(type='email' name='email' placeholder='Email')
+            .form-group
+              input#phone.form-control.my-input(type='number' min='0' name='phone' placeholder='Phone')
+            .text-center
+              button.btn.btn-block.send-button.tx-tfm(type='submit') Create Your Free Account
+            .col-md-12
+              .login-or
+                hr.hr-or
+            p.small.mt-3
+              | By signing up, you are indicating that you have read and agree to the 
+              a.ps-hero__content__link(href='#') Terms&nbsp;of&nbsp;Use
+              |  and 
+              a(href='#') Privacy&nbsp;Policy
+              | .

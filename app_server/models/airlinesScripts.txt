@@ -1,0 +1,10 @@
+db.airlines.insertOne({
+  name: 'Aer Lingus',
+  rating: 3,
+  operatingSince: '1950',
+  reviews: [{author: 'John Doe',
+   rating: 3, 
+   reviewText: 'Got me from point A to Z',
+   date: Date.now}] 
+})
+  

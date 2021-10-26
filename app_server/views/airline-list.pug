@@ -1,0 +1,17 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  .row
+    .col-12.col-md-8
+      each location in airlines
+        .card
+          .card-block
+            h4
+              a(href="/location")= location.name
+              small &nbsp;
+                +outputRating(location.rating)
+            p.operatingSince= 'Operating since ' + location.operatingSince
+    .col-12.col-md-4
+      p.lead= sidebar
