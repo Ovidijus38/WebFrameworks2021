@@ -5,7 +5,7 @@ const ctrlOthers = require('../controllers/others');
 
 /* Airlines pages */
 router.get('/', ctrlLocations.login);
-router.get('/location', ctrlLocations.registration);
+router.get('/register', ctrlLocations.registration);
 router.get('/airlinesList', ctrlLocations.airlinesList);
 router.get('/location/review/new', ctrlLocations.addReview);
 

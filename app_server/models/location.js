@@ -21,8 +21,8 @@ max: 5
 },
 reviewText: String,
 createdOn: {
-type: Date,
-'default': Date.now
+type: String,
+required: true
 }
 });
 
